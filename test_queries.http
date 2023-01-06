@@ -1,0 +1,43 @@
+POST http://localhost:5000/get_form
+Content-Type: application/x-www-form-urlencoded
+
+param1=test&param2=test
+
+###
+
+POST http://localhost:5000/get_form
+Content-Type: application/x-www-form-urlencoded
+
+user_mail=sany@mail.ry&user_phone=+79446367923
+
+###
+
+POST http://localhost:5000/get_form
+Content-Type: application/x-www-form-urlencoded
+
+order_mail=orde@mail.ru&order_text=any text
+
+###
+
+POST http://localhost:5000/get_form
+Content-Type: application/x-www-form-urlencoded
+
+company_text=some text&company_date=12.12.2012&company_mail=company@mail.ru&company_phone=+79224682081
+
+###
+
+POST http://localhost:5000/get_form
+Content-Type: application/x-www-form-urlencoded
+
+user_text=text&user_date=2000-02-13
+
+###
+
+POST http://localhost:5000/get_form
+Content-Type: application/x-www-form-urlencoded
+
+company_phone=+222222222&company_date=not_date&company_mail=not_email
+
+###
+
+

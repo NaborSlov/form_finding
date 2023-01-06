@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/get_form", methods=['POST'])
 def search_form():
-    data = request.args
+    data = request.form
     result = validate_type(data)
     return jsonify(result)
 

@@ -10,6 +10,30 @@
       "order_text": "text",
       "order_date": "date",
       "order_mail": "email"
+    },
+    "3": {
+      "name": "product_form",
+      "product_text": "text",
+      "product_date": "date"
+    },
+    "4": {
+      "name": "company_form",
+      "company_text": "text",
+      "company_date": "date",
+      "company_mail": "email",
+      "company_phone": "phone"
+    },
+    "5": {
+      "name": "patient_form",
+      "user_text": "text",
+      "user_date": "date",
+      "user_mail": "email",
+      "user_phone": "phone"
+    },
+    "6": {
+      "name": "test_form",
+      "test_text": "text",
+      "test_email": "email"
     }
   }
 }
