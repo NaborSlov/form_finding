@@ -1,0 +1,20 @@
+#!/bin/bash
+
+curl -d "param1=test&param2=test" http://localhost:5000/get_form
+echo "-------------------"
+
+curl -d "user_mail=sany@mail.ry&user_phone=+79446367923" http://localhost:5000/get_form
+echo "-------------------"
+
+curl -d "order_mail=orde@mail.ru&order_text=any text" http://localhost:5000/get_form
+echo "-------------------"
+
+curl -d "company_text=some text&company_date=12.12.2012&company_mail=company@mail.ru&company_phone=+79224682081" http://localhost:5000/get_form
+echo "-------------------"
+
+curl -d "user_text=text&user_date=2000-02-13" http://localhost:5000/get_form
+echo "-------------------"
+
+curl -d "company_phone=+222222222&company_date=not_date&company_mail=not_email" http://localhost:5000/get_form
+echo "-------------------"
+
