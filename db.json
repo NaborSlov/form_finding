@@ -1,0 +1,15 @@
+{
+  "forms": {
+    "1": {
+      "name": "user_form",
+      "user_mail": "email",
+      "user_phone": "phone"
+    },
+    "2": {
+      "name": "order_form",
+      "order_text": "text",
+      "order_date": "date",
+      "order_mail": "email"
+    }
+  }
+}
