@@ -2,7 +2,7 @@ import re
 
 from tinydb import Query
 
-from db import forms
+from db import collection
 
 re_date_1 = re.compile(r"(0?[1-9]|[12][0-9]|3[01]).(0?[1-9]|1[012]).((19|20)\d\d)")  # DD.MM.YYYY
 re_date_2 = re.compile(r"[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])")  # YYYY-MM-DD
@@ -33,7 +33,7 @@ def validate_type(data: dict) -> str | dict[str, str]:
     if not return_data:
         return {'error': 'Enter data'}
 
-    if results := forms.search(Query().fragment(return_data)):
-        return f"Name form: {results[0].get('name')}"
+    if results := collection.find_one(return_data):
+        return {"Name form": results.get('name')}
 
     return return_data

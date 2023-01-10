@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -d "param1=test&param2=test" http://localhost:5000/get_form
+curl -d "param1=test&param2=test@mail.ru" http://localhost:5000/get_form
 echo "-------------------"
 
 curl -d "user_mail=sany@mail.ry&user_phone=+79446367923" http://localhost:5000/get_form

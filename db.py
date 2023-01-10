@@ -1,9 +1,5 @@
-import os
-from pathlib import Path
+import pymongo
 
-from tinydb import TinyDB
-
-BASE_DIR = Path(__file__).resolve().parent
-
-db = TinyDB(os.path.join(BASE_DIR, "db.json"))
-forms = db.table("forms")
+client = pymongo.MongoClient("mongodb://username:hard_password@mongo:27017")
+db = client["my_db"]
+collection = db["forms"]
